@@ -1,19 +1,57 @@
 
-.foody-container {
+.general-container {
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "main" 
+        "main2"
+        "main3" 
+        "main4"
+        "main5"
+        "footer";
+        grid-template-columns:
+        none;
+        grid-template-rows:
+        1fr 2fr 6fr 6fr 3fr 2fr 1fr;
+        height: 100vh;
+}
+nav {
+    grid-area: nav;
+    background-color: black;
+    color: white;;
+}
+main {
+    grid-area: main;
+}
+.main2 {
+    grid-area: main2;
+}
+.main3 {
+    grid-area: main3;
+}
+.main4 {
+    grid-area: main4;
+}
+.main5 {
+    grid-area: main5;
+}
+footer {
+    grid-area: footer;
+}
+ .foody-container { 
     display: flex;
     flex-direction: row;
     background-color: black;
     color: white;
-    align-items: flex-end;
-    justify-content: space-around;
-    
-}
-.foody {
-justify-content: center;
+    justify-content: flex-end;
 }
 ul {
     list-style-type: none;
     padding: 5px; 
+}
+button {
+    background-color: green;
+
 }
 
 .list {
@@ -22,22 +60,49 @@ ul {
     justify-content: space-evenly;
 
 }
-.makingfood {
-    background-color: navy;
+
+.header {
     display: flex;
-    background-image: url(https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg);
+    background-image: url(../Project1/shrimpdish2.jpg);
+    background-size: cover;
     color: white;
+    justify-content: center;
 }
 .aboutus-container {
     background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
-
 }
-.specialitie {
-    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
+.aboutus-header {
+    color: green;
+}
+.aboutus-text {
+    color: black;
+}
+.specialities-container {
+    background-image: url(../Project1/shrimpdish3.jpg);
+    background-size: cover;
+}
+.specialities {
+    color: green;
+}
+.specialities-p {
+    color: white;
 }
 .menu {
-    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
+    background-image: url(../Project1/shrimpdish.jpg);
+    background-size: cover;
+}
+.menu-items {
+    color: green;
+}
+
+.footer {
+    background-image: url(../Project1/shrimpdish4.jpg);
+    background-size: cover;
+    color: white;
+}
+.book {
+    color: green;
+}
+p {
+    color: white;
 }

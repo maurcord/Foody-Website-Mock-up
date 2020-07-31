@@ -1,0 +1,43 @@
+
+.foody-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+}
+.foody {
+justify-content: center;
+}
+ul {
+    list-style-type: none;
+    padding: 5px; 
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.makingfood {
+    background-color: navy;
+    display: flex;
+    background-image: url(https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg);
+    color: white;
+}
+.aboutus-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
+
+}
+.specialitie {
+    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
+}
+.menu {
+    background-image: url("https://www.mainandvineshop.com/images/recipes/detail/shrimp-poke-bowl.jpg");
+}

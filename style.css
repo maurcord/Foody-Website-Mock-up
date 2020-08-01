@@ -1,6 +1,15 @@
 
 .general-container {
-        display: grid;
+        display: grid;    
+        grid-template-rows:
+        1fr  
+        700px
+        1fr 
+        1fr 
+        1fr 
+        1fr
+        1fr;
+        grid-template-columns: auto;
         grid-template-areas:
         "nav"
         "main" 
@@ -9,100 +18,136 @@
         "main4"
         "main5"
         "footer";
-        grid-template-columns:
-        none;
-        grid-template-rows:
-        1fr 2fr 6fr 6fr 3fr 2fr 1fr;
         height: 100vh;
 }
-nav {
+.nav-container{
     grid-area: nav;
     background-color: black;
-    color: white;;
+    color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+
 }
+
+.logo {
+    color: white;
+    text-align: center;
+
+}
+.list-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    
+}
+.list-buttons {
+    text-align: center;
+    
+}
+
+.buynowbutton {
+    background-color: green;
+    color: white;
+}
+a {
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menubar1, .menubar2, .menubar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
 main {
     grid-area: main;
+    color: white;
+    display: grid;
+    background-image: url(../Project1/shrimpdish2.jpg);
+    background-size: cover;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+    margin: none;
+   
+
+}
+.img-container {
+    
+}
+img {
+    
+}
+.header-container {
+    margin-right: 500px;
+}
+.making-food-header {
+    border: 2px solid red;
+    color: white;
+    font-size: 300%;
+    
+}
+
+.making-food-text-container {
+    margin-right: 500px;
+}
+
+.making-food-text {
+    border: 2px solid red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.more-details-button-container {
+    border: 4px solid red;
+}
+.more-details-button {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
 .main2 {
     grid-area: main2;
+    display: flex;
 }
+.about-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+}
+
 .main3 {
     grid-area: main3;
+    display: flex
 }
 .main4 {
     grid-area: main4;
+    display: flex;
 }
 .main5 {
     grid-area: main5;
+    display: flex;
 }
 footer {
     grid-area: footer;
-}
- .foody-container { 
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    justify-content: flex-end;
-}
-ul {
-    list-style-type: none;
-    padding: 5px; 
-}
-button {
-    background-color: green;
-
-}
-
-.list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-.header {
-    display: flex;
-    background-image: url(../Project1/shrimpdish2.jpg);
-    background-size: cover;
-    color: white;
-    justify-content: center;
-}
-.aboutus-container {
-    background-color: white;
-}
-.aboutus-header {
-    color: green;
-}
-.aboutus-text {
-    color: black;
-}
-.specialities-container {
-    background-image: url(../Project1/shrimpdish3.jpg);
-    background-size: cover;
-}
-.specialities {
-    color: green;
-}
-.specialities-p {
-    color: white;
-}
-.menu {
-    background-image: url(../Project1/shrimpdish.jpg);
-    background-size: cover;
-}
-.menu-items {
-    color: green;
-}
-
-.footer {
-    background-image: url(../Project1/shrimpdish4.jpg);
-    background-size: cover;
-    color: white;
-}
-.book {
-    color: green;
-}
-p {
-    color: white;
 }

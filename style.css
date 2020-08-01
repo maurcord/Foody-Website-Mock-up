@@ -128,12 +128,36 @@ img {
 .main2 {
     grid-area: main2;
     display: flex;
+    border: 5px solid red;
 }
-.about-us-container {
+
+.aboutus-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
+    grid-template-areas: 
+    "left-column"
+    "right-column";
+    display: flex; 
+    flex-direction: row;
 }
+.aboutus-header {
+    color: green;
+    grid-area: left-column;
+}
+.aboutus-text {
+    grid-area: left-column;
+}
+.shrimpdish {
+    grid-area: right-column;
+    justify-content: flex-end;
+}
+.more-details-button2 {
+    background-color: green;
+    justify-content: center;
+    grid-area: left-column;
+}
+
 
 .main3 {
     grid-area: main3;

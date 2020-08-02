@@ -3,7 +3,7 @@
         display: grid;    
         grid-template-rows:
         1fr  
-        700px
+        auto
         1fr 
         1fr 
         1fr 
@@ -27,8 +27,6 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-
-
 }
 
 .logo {
@@ -68,16 +66,29 @@ a {
 
 main {
     grid-area: main;
-    color: white;
+    
+    /* color: white; 
     display: grid;
-    background-image: url(../Project1/shrimpdish2.jpg);
-    background-size: cover;
+    background-image: url(./shrimpdish2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0;
+    // This is what you had before, you were missing height and width. also background-position //  
+
+    */
+    background-color: black;
+    background-image: url(./shrimpdish2.jpg);
+    background-repeat: no-repeat;
+    height:80vh;
+    width: 100%;
+    background-size: auto;
+    background-position: center center;
+    
 }
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
     padding: none;
@@ -85,20 +96,14 @@ main {
    
 
 }
-.img-container {
-    
-}
-img {
-    
-}
 .header-container {
     margin-right: 500px;
 }
 .making-food-header {
-    border: 2px solid red;
+   
     color: white;
     font-size: 300%;
-    
+    align-self: start;
 }
 
 .making-food-text-container {
@@ -106,15 +111,12 @@ img {
 }
 
 .making-food-text {
-    border: 2px solid red;
+    
     color: white;
     display: flex;
     flex-direction: column;
+    alig
     
-
-}
-.more-details-button-container {
-    border: 4px solid red;
 }
 .more-details-button {
     background-color: green;
@@ -122,40 +124,40 @@ img {
 }
 
 
-
-
-
 .main2 {
     grid-area: main2;
-    display: flex;
-    border: 5px solid red;
 }
 
 .aboutus-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: none;
-    grid-template-areas: 
-    "left-column"
-    "right-column";
-    display: flex; 
-    flex-direction: row;
+    grid-area: left-columm right-column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .aboutus-header {
     color: green;
     grid-area: left-column;
+    align-self: flex-start;
+    
 }
 .aboutus-text {
     grid-area: left-column;
-}
-.shrimpdish {
-    grid-area: right-column;
-    justify-content: flex-end;
+    align-self: flex-start;
+
 }
 .more-details-button2 {
     background-color: green;
-    justify-content: center;
     grid-area: left-column;
+    align-self: flex-start;
+}
+
+.shrimpdish {
+    grid-area: right-column;
+    align-self: flex-end;
+    margin-right: 100px;
+    
 }
 
 

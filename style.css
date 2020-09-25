@@ -1,73 +1,77 @@
 html {
-    height: auto;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden
+  /* height: auto; */
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 .general-container {
-        display: grid;    
-        grid-template-rows:
-        1fr  
-        1fr
-        1fr 
-        1fr 
-        1fr 
-        1fr
-        1fr;
-        grid-template-columns: none;
-        grid-template-areas:
-        "nav"
-        "main" 
-        "main2"
-        "main3" 
-        "main4"
-        "main5"
-        "footer";
-        height: 100vh;
-        margin: 0;
+  display: grid;
+  grid-template-rows:
+    1fr
+    1fr
+    1fr
+    1fr
+    1fr
+    1fr
+    1fr;
+  grid-template-columns: none;
+  grid-template-areas:
+    "nav"
+    "main"
+    "main2"
+    "main3"
+    "main4"
+    "main5"
+    "footer";
+  height: 100vh;
+  margin: 0;
 }
-.nav-container{
-    grid-area: nav;
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: -5px;
+nav {
+  grid-area: nav;
+}
+.nav-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
 .logo {
-    color: white;
-    text-align: center;
-
+  color: white;
+  text-align: center;
+  flex-direction: row;
 }
 .logo-container {
-    font-size: 20px;
+  font-size: 20px;
 }
 .list-container {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-right: 10px;
-    
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
 }
 .list-buttons {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .buynowbutton {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 a {
-    color: white;
-    justify-content: center;
-    text-decoration: none;
+  color: white;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.menubar1, .menubar2, .menubar3 {
+.menubar1,
+.menubar2,
+.menubar3 {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -75,269 +79,548 @@ a {
 }
 
 main {
-    grid-area: main;
-    /* color: white; 
-    display: grid;
-    background-image: url(./shrimpdish2.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding: 0;
-    // This is what you had before, you were missing height and width. also background-position //  
-    */
-    background-color: black;
-    background-image: url(./shrimpdish2.jpg);
-    background-repeat: no-repeat;
-    height:80vh;
-    width: 100%;
-    background-size: 125%;
-    background-position: center center;
-    margin: 0;
+  grid-area: main;
+  background-color: black;
+  background-image: url(./shrimpdish2.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center center;
+  margin: 0;
+  padding: 100px;
 }
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    top: 60px;
-    left: 100px;
-    margin-bottom: 100px;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  top: 60px;
+  left: 100px;
+  margin-bottom: 100px;
 }
 .header-container {
-    margin-right: 500px;
+  margin-right: 500px;
 }
 .making-food-header {
-   
-    color: white;
-    font-size: 250%;
-    align-self: start;
+  color: white;
+  font-size: 250%;
+  align-self: start;
 }
 
 .making-food-text-container {
-    margin-right: 500px;
-    font-size: 80%;
+  margin-right: 500px;
+  font-size: 80%;
 }
 
 .making-food-text {
-    
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start
-    
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .more-details-button {
-    background-color: green;
-    color: white;
-    padding: 5px 20px;
+  background-color: green;
+  color: white;
+  padding: 5px 20px;
 }
-
 
 .main2 {
-    grid-area: main2;
+  grid-area: main2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
-.aboutus-container {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-
-}
 .aboutus-header {
-    color: green;
-    
-   
+  color: green;
 }
 .aboutus-text {
-    margin-right: 150px;
-
+  margin-right: 150px;
 }
 .more-details-button2 {
-    background-color: green;
-    
-    
+  background-color: green;
 }
 .left-column-container {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .shrimpdish {
-    margin-right: 50px;
+  margin-right: 50px;
 }
-
 
 .main3 {
-    grid-area: main3;
-    background: url(./shrimpdish3.jpg) no-repeat center center;
-    background-repeat: no-repeat;
-    height: 75vh;
-    width: 100%;
-    background-size: 125%;
-    background-position: center center;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
+  grid-area: main3;
+  background: url(./shrimpdish3.jpg) no-repeat center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 125%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.main3-specialities-images-container {
-    display: block;
-    justify-content: center;
-    
-}
+
 .specialities-container {
-    text-align: center;
+  text-align: center;
 }
 .specialities {
-    color: green;
+  color: green;
 }
 .specialities-p {
-    color: white;
-    padding: 5px;
+  color: white;
 }
-
 
 .main4 {
-grid-area: main4;
-z-index: 0;
-position: relative;
-height: 100%;
-width: 100%;
-justify-content: center;
-flex-wrap: wrap;
+  grid-area: main4;
+  text-align: center;
 }
-#menu {
-    justify-content: center;
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
-
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-}
-.left-right-menu-container {
-    display: flex;
-    flex-direction: row;
-}
-.left-menu {
-    align-self: flex-start;
-    border: 10px solid white;
-    margin-right: 100px;
-}
-.right-menu {
-    align-self: flex-end;
-    border: 10px solid white;
-    margin-left: 100px;
-}
-h6::first-line { 
-    color: green;
-    font-size: 20px;
-    text-decoration: underline;
-    padding: 10px;
+h6::first-line {
+  color: green;
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 10px;
 }
 li::first-line {
-    color: green;
+  color: green;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 h2 {
-    color: green;
-    text-align: center;
-    font-size: 50px;
+  color: green;
+  text-align: center;
+  font-size: 50px;
 }
-
+.our-menu-container {
+  color: green;
+}
 .heading-under-ourmenu {
-    text-align: center;
+  text-align: center;
 }
 .button-container {
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .more-details-button2 {
-    background-color: green;
-    padding: 10px 15px;
+  background-color: green;
+  padding: 10px 15px;
 }
 .main5 {
-    grid-area: main5;
-    background-image: url(./BACKGROUND\ IMAGE\ Image.jpg);
-    background-repeat: no-repeat;
-    height: 50vh;
-    width: 100%;
-    background-size: 110%;
-    background-position: center center;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    color: green;
+  grid-area: main5;
+  background-image: url(./BACKGROUND\ IMAGE\ Image.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 110%;
+  background-position: center center;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  color: green;
 }
 .book {
-    color: green;
+  color: green;
 }
 .booking-p {
-    color: white;
+  color: white;
 }
 .book-now-button2 {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
 }
 .reservation-containers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .date-container {
-    display: block;
+  display: block;
 }
 
 footer {
-    grid-area: footer;
-    background-color: black;
-    
+  grid-area: footer;
+  background-color: black;
 }
 .main-footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .foody-footer {
-    color: green
+  color: green;
 }
 .footer-rights {
-    color: white;
+  color: white;
 }
 .creative-area-logo {
-    background-color: black;
-    align-items: center;
-    margin-right: 65px;
+  background-color: black;
+  align-items: center;
+  margin-right: 65px;
 }
 .social-media-container {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 .follow-us-text {
-    color: green;
+  color: green;
 }
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+
+@media only screen and (max-width: 768px) {
+  .general-container {
+    display: grid;
+    grid-template-rows:
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr;
+    grid-template-columns: none;
+    grid-template-areas:
+      "nav"
+      "main"
+      "main2"
+      "main3"
+      "main4"
+      "main5"
+      "footer";
+    height: 100vh;
+    margin: 0;
+    padding: -500px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  nav {
+    grid-area: nav;
   }
   
+  .main {
+    grid-area: main;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 100px; */
+    padding: 0;
+    background-size: cover;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .making-food-text-container {
+    height: 400px;
+  }
+  .making-food-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 100px;
+         width: 300px; */
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  .making-food-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    margin-left: 80px;
+  }
+  .more-details-button {
+    margin-left: 120px;
+  }
+
+  .main2 {
+    grid-area: main2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .left-column-container {
+    height: 500px;
+    text-align: center;
+    display: block;
+  }
+  .more-details-button2 {
+    margin-top: 150px;
+    margin-left: 250px;
+  }
+
+  .aboutus-text {
+    height: 200px;
+    width: 200px;
+  }
+
+  .main3 {
+    grid-area: main3;
+    display: inline-block;
+  }
+  .small-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .img1 {
+    height: 150px;
+    width: 150px;
+  }
+  .img2 {
+    height: 150px;
+    width: 150px;
+  }
+  .img3 {
+    height: 150px;
+    width: 150px;
+  }
+  .img4 {
+    height: 150px;
+    width: 150px;
+  }
+  .shrimpdish {
+    height: 200px;
+    width: 200px;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .more-details-button3 {
+    background-color: green;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .main4 {
+    grid-area: main4;
+  }
+  .our-menu-container {
+    color: green;
+  }
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  .main5 {
+    grid-area: main5;
+  }
+  footer {
+    grid-area: footer;
+    padding: 150px;
+  }
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .general-container {
+    display: grid;
+    grid-template-rows:
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr;
+    grid-template-columns: none;
+    grid-template-areas:
+      "nav"
+      "main"
+      "main2"
+      "main3"
+      "main4"
+      "main5"
+      "footer";
+    height: 100vh;
+    margin: 0;
+    padding: -500px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  nav {
+    grid-area: nav;
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+  }
+  .main {
+    grid-area: main;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 100px; */
+    padding: 0;
+    background-size: cover;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .making-food-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 100px;
+             width: 300px; */
+    font-size: 30px;
+  }
+  .making-food-text-container {
+    height: 500px;
+  }
+  .making-food-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    /* height: 100px;
+             width: 600px; */
+    text-align: center;
+    /* margin-left: 200px; */
+  }
+  .more-details-button {
+    margin-left: 150px;
+  }
+
+  .main2 {
+    grid-area: main2;
+    display: flex;
+    flex-direction: column;
+    padding-right: 400px;
+  }
+  .aboutus-header {
+    margin-right: 150px;
+  }
+  .left-column-container {
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .more-details-button2 {
+    margin-top: 200px;
+    margin-left: 5px;
+    position: relative;
+    margin-right: 150px;
+  }
+  .main3 {
+    grid-area: main3;
+    height: 500px;
+  }
+
+  .main3-specialities-images-container {
+    width: 300px;
+    padding-top: 30px;
+    margin-left: 50px;
+  }
+  .small-image-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+  }
+  .img1 {
+    height: 90px;
+    width: 90px;
+  }
+  .img2 {
+    height: 90px;
+    width: 90px;
+  }
+  .img3 {
+    height: 90px;
+    width: 90px;
+  }
+  .img4 {
+    height: 90px;
+    width: 90px;
+  }
+  .shrimpdish {
+    height: 200px;
+    width: 200px;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .more-details-button3 {
+    background-color: green;
+    margin-right: 450px;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .main4 {
+    grid-area: main4;
+  }
+  .our-menu-container {
+    color: green;
+    width: 150px;
+    margin-left: 110px;
+  }
+  .menu-container {
+    height: 1000px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  .main5 {
+    grid-area: main5;
+    height: 550px;
+    background-size: cover;
+  }
+  .book {
+    margin-right: 450px;
+  }
+  .booking-p {
+    margin-right: 450px;
+    width: 160px;
+  }
+  .reservation-containers {
+    display: flex;
+    flex-direction: column;
+    margin-right: 450px;
+  }
+  .book-now-button4 {
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+  }
+  footer {
+    grid-area: footer;
+    padding: 0;
+  }
+  .main-footer-container {
+    display: inline-block;
+    width: 150px;
+    height: 400px;
+    margin-left: 100px;
+  }
+}

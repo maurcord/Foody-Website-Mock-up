@@ -7,13 +7,13 @@ html {
 .general-container {
   display: grid;
   grid-template-rows:
-    1fr
-    1fr
-    1fr
-    1fr
-    1fr
-    1fr
-    1fr;
+    auto
+    800px
+    450px
+    580px
+    1000px
+    600px
+    120px;
   grid-template-columns: none;
   grid-template-areas:
     "nav"
@@ -23,8 +23,8 @@ html {
     "main4"
     "main5"
     "footer";
-  height: 100vh;
   margin: 0;
+  font-family: "Castoro", serif;
 }
 nav {
   grid-area: nav;
@@ -36,25 +36,28 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  max-height: 50px;
 }
-
+a {
+  padding: 10px;
+}
 .logo {
   color: white;
   text-align: center;
   flex-direction: row;
 }
 .logo-container {
-  font-size: 20px;
+  font-size: 30px;
+  margin-left: 150px;
 }
 .list-container {
-  text-align: center;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  margin-right: 100px;
+  justify-content: space-evenly;
 }
+
 .list-buttons {
   text-align: center;
 }
@@ -62,6 +65,10 @@ nav {
 .buynowbutton {
   background-color: green;
   color: white;
+  margin-left: 25px;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
 }
 a {
   color: white;
@@ -72,55 +79,51 @@ a {
 .menubar1,
 .menubar2,
 .menubar3 {
-  width: 35px;
-  height: 5px;
+  width: 28px;
+  height: 2px;
   background-color: white;
   margin: 6px 0;
+  border-radius: 2px;
+  margin-left: 10px;
 }
 
 main {
   grid-area: main;
-  background-color: black;
-  background-image: url(./shrimpdish2.jpg);
+  background-image: url(./3041.jpg);
   background-repeat: no-repeat;
-  background-size: 125%;
-  background-position: center center;
-  margin: 0;
-  padding: 100px;
+  background-size: contain;
 }
 .main-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
-  top: 60px;
-  left: 100px;
-  margin-bottom: 100px;
+  top: 150px;
+  left: 150px;
+  /* margin-bottom: 100px; */
 }
 .header-container {
-  margin-right: 500px;
+  /* margin-right: 500px; */
 }
 .making-food-header {
   color: white;
-  font-size: 250%;
-  align-self: start;
+  font-size: 56px;
 }
 
 .making-food-text-container {
-  margin-right: 500px;
-  font-size: 80%;
+  /* margin-right: 500px; */
+  /* font-size: 80%; */
 }
 
 .making-food-text {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 .more-details-button {
   background-color: green;
   color: white;
-  padding: 5px 20px;
+  padding: 10px 20px;
+  font-family: "Castoro", serif;
+  border-radius: 5px;
+  border: none;
 }
 
 .main2 {
@@ -133,28 +136,36 @@ main {
 
 .aboutus-header {
   color: green;
+  font-size: 45px;
 }
 .aboutus-text {
   margin-right: 150px;
 }
 .more-details-button2 {
   background-color: green;
+  border-radius: 5px;
+  border: none;
 }
 .left-column-container {
-  margin-left: 100px;
+  margin-left: 150px;
+  margin-bottom: 200px;
+  margin-right: 10px;
+  color: grey;
 }
 
 .shrimpdish {
-  margin-right: 50px;
+  margin-right: 100px;
+  height: 500px;
+  width: 500px;
+  margin-bottom: 150px;
 }
 
 .main3 {
   grid-area: main3;
-  background: url(./shrimpdish3.jpg) no-repeat center center;
+  background: url(./shrimpdish3.jpg);
+  background-color: black;
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
-  background-size: 125%;
-  margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -162,15 +173,56 @@ main {
   align-items: center;
   align-content: center;
 }
-
+.main3-specialities-images-container {
+  margin-bottom: 60px;
+}
+.small-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card {
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  margin: 15px;
+  height: 220px;
+  width: 185px;
+}
+.img1 {
+  height: 160px;
+  margin-top: 2px;
+  width: 180px;
+}
+.img2 {
+  height: 160px;
+  width: 180px;
+  margin-top: 2px;
+}
+.img3 {
+  height: 160px;
+  width: 180px;
+  margin-top: 2px;
+}
+.img4 {
+  height: 160px;
+  width: 180px;
+  margin-top: 2px;
+}
 .specialities-container {
   text-align: center;
+  margin-bottom: 00px;
 }
 .specialities {
   color: green;
+  font-size: 45px;
+  margin-top: 75px;
 }
 .specialities-p {
   color: white;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .main4 {
@@ -201,6 +253,7 @@ h2 {
 }
 .our-menu-container {
   color: green;
+  margin-top: 50px;
 }
 .heading-under-ourmenu {
   text-align: center;
@@ -216,6 +269,14 @@ h2 {
 .more-details-button2 {
   background-color: green;
   padding: 10px 15px;
+  border-radius: 2px;
+  border: none;
+}
+.more-details-button3 {
+  background-color: green;
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: none;
 }
 .main5 {
   grid-area: main5;
@@ -311,7 +372,7 @@ footer {
   nav {
     grid-area: nav;
   }
-  
+
   .main {
     grid-area: main;
     flex-direction: row;

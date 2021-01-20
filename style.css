@@ -16,7 +16,7 @@ body {
     800px
     450px
     580px
-    1000px
+    1100px
     400px
     80px;
   grid-template-columns: none;
@@ -243,20 +243,61 @@ main {
   margin-left: 100px;
   margin-right: 100px;
 }
-
+.price {
+  font-size: large;
+}
 .main4 {
   grid-area: main4;
-  text-align: center;
 }
+.main4::after {
+  content: "";
+  background: url(/Project1/3041.jpg);
+
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .menu-container {
+  /* grid-template-columns: 1fr 1fr; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
+  justify-content: center;
+  align-content: center;
   font-family: "Castoro", serif;
+  gap: 50px;
+  grid-auto-flow: column;
 }
-h6::first-line {
+.menu-item-heading {
+  text-align: center;
+}
+.menu-item-title {
+  /* display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start; */
+}
+/* .menu-small-title {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+} */
+.left.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* margin-left: 30px; */
+}
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* margin-left: 30px; */
+}
+h3::first-line {
   color: green;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: underline;
   padding: 10px;
 }
@@ -265,19 +306,26 @@ li::first-line {
 }
 li {
   list-style-type: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 0;
+  list-style: none;
 }
 h2 {
   color: green;
   text-align: center;
   font-size: 50px;
 }
+h3 {
+}
 .our-menu-container {
   color: green;
   margin-top: 50px;
   font-family: "Castoro", serif;
+  text-align: center;
 }
 .heading-under-ourmenu {
   text-align: center;
+  color: black;
 }
 .button-container {
   justify-content: center;
@@ -339,7 +387,7 @@ h2 {
 .reservation-containers {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: green;
 }
@@ -364,7 +412,7 @@ footer {
   bottom: 0;
 }
 .book1 {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .book-now-button4 {
   display: flex;
@@ -377,8 +425,10 @@ footer {
   color: white;
   border-radius: 5px;
   border: none;
-  padding: 20px 40px;
+  padding: 15px 70px;
   margin: 50px;
+  font-family: serif;
+  font-size: 18px;
 }
 .foody-footer {
   color: green;
@@ -407,6 +457,15 @@ footer {
 .fa {
   border: white solid 1px;
   margin: 5px;
+}
+.j {
+  padding: 10px;
+}
+.reservation-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 @media only screen and (max-width: 768px) {
   .general-container {

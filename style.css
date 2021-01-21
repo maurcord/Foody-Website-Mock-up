@@ -16,7 +16,7 @@ body {
     800px
     450px
     580px
-    1100px
+    1200px
     400px
     80px;
   grid-template-columns: none;
@@ -44,8 +44,8 @@ nav {
   height: 60px;
   background-image: linear-gradient(
     to left,
-    rgba(25, 0, 0, 0.2),
-    rgb(0, 0, 143, 0.2)
+    rgba(25, 0, 0, 0.8),
+    rgba(0, 0, 143, 0.3)
   );
 }
 a {
@@ -106,7 +106,7 @@ main {
   background-image: linear-gradient(
       to left,
       rgba(25, 0, 0, 0.2),
-      rgb(0, 0, 143, 0.2)
+      rgb(0, 0, 143, 0.3)
     ),
     url(./3041.jpg);
   max-height: 600px;
@@ -248,23 +248,33 @@ main {
 }
 .main4 {
   grid-area: main4;
+  position: relative;
 }
-.main4::after {
-  content: "";
-  background: url(/Project1/3041.jpg);
-
-  z-index: -1;
+.main4::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "normal";
+  background-image: url(./3041.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.1;
+  z-index: -1;
 }
-
+.main-fake {
+}
 .menu-container {
   /* grid-template-columns: 1fr 1fr; */
   display: grid;
   justify-content: center;
   align-content: center;
   font-family: "Castoro", serif;
-  gap: 50px;
+  gap: 100px;
   grid-auto-flow: column;
 }
 .menu-item-heading {
@@ -297,18 +307,18 @@ main {
 }
 h3::first-line {
   color: green;
-  font-size: 25px;
-  text-decoration: underline;
-  padding: 10px;
+  font-size: 20px;
 }
 li::first-line {
   color: green;
 }
 li {
   list-style-type: none;
+  font-size: 14px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding-left: 0;
   list-style: none;
+  padding: 10px;
+  padding-left: 0;
 }
 h2 {
   color: green;
@@ -316,12 +326,15 @@ h2 {
   font-size: 50px;
 }
 h3 {
+  border-bottom: 2px solid green;
+  padding-bottom: 1px;
 }
 .our-menu-container {
   color: green;
-  margin-top: 50px;
   font-family: "Castoro", serif;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .heading-under-ourmenu {
   text-align: center;

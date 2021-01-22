@@ -38,7 +38,6 @@ nav {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   justify-items: center;
   height: 60px;
@@ -53,21 +52,20 @@ a {
 }
 .logo {
   color: white;
-  text-align: center;
-  flex-direction: row;
+  /* text-align: center;
+  flex-direction: row; */
 }
 .logo-container {
   font-size: 30px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
-.list-container {
+/* .list-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 100px;
   justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .list-buttons {
   text-align: center;
@@ -100,7 +98,6 @@ a {
 
 main {
   grid-area: main;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(
@@ -111,13 +108,17 @@ main {
     url(./3041.jpg);
   max-height: 600px;
   max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .main-container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 150px;
-  left: 150px;
+  margin-left: 150px;
+
+  /* top: 150px;
+   */
   /* margin-bottom: 100px; */
 }
 .header-container {
@@ -126,6 +127,7 @@ main {
 .making-food-header {
   color: white;
   font-size: 56px;
+  margin: 0;
 }
 
 .making-food-text-container {
@@ -135,6 +137,9 @@ main {
 
 .making-food-text {
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 60%;
 }
 .more-details-button {
   background-color: rgb(74, 171, 0);
@@ -265,8 +270,6 @@ main {
   right: 0;
   opacity: 0.1;
   z-index: -1;
-}
-.main-fake {
 }
 .menu-container {
   /* grid-template-columns: 1fr 1fr; */
@@ -545,13 +548,13 @@ footer {
   .general-container {
     display: grid;
     grid-template-rows:
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr;
+      60px
+      800px
+      450px
+      580px
+      1200px
+      400px
+      80px;
     grid-template-columns: none;
     grid-template-areas:
       "nav"
@@ -561,55 +564,65 @@ footer {
       "main4"
       "main5"
       "footer";
-    height: 100vh;
     margin: 0;
-    padding: -500px;
-    margin: 0;
-    overflow-x: hidden;
   }
 
   nav {
     grid-area: nav;
   }
-
-  .main {
-    grid-area: main;
-    flex-direction: row;
-    justify-content: center;
-    /* height: 100px; */
-    padding: 0;
-    background-size: cover;
-  }
-  .main-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .making-food-text-container {
-    height: 400px;
-  }
-  .making-food-header {
+  .nav-container {
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    /* margin-left: 100px;
-         width: 300px; */
-    font-size: 30px;
-    margin-left: 100px;
+    justify-items: center;
+    height: 60px;
+    background-image: linear-gradient(
+      to left,
+      rgba(25, 0, 0, 0.8),
+      rgba(0, 0, 143, 0.3)
+    );
   }
-  .making-food-text {
+  .logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .spacer {
+    height: 5px;
+    width: 10px;
+    padding: 5px;
+  }
+
+  .main {
+    grid-area: main;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
-    text-align: center;
-    margin-left: 80px;
+    background-position: center;
   }
-  .more-details-button {
-    margin-left: 120px;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .making-food-header {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center; */
+    /* margin-left: 100px;
+         width: 300px; */
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+  }
+  .making-food-text {
+    /* display: flex;
+    flex-direction: row; */
+    margin: 0;
   }
 
   .main2 {
@@ -696,13 +709,13 @@ footer {
   .general-container {
     display: grid;
     grid-template-rows:
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr
-      1fr;
+      300px
+      800px
+      450px
+      580px
+      1200px
+      400px
+      80px;
     grid-template-columns: none;
     grid-template-areas:
       "nav"
@@ -712,19 +725,25 @@ footer {
       "main4"
       "main5"
       "footer";
-    height: 100vh;
     margin: 0;
-    padding: -500px;
-    margin: 0;
-    overflow-x: hidden;
+    max-width: 375px;
   }
   nav {
     grid-area: nav;
+    max-width: 375px;
   }
   .nav-container {
-    display: flex;
-    flex-direction: column;
-    margin-right: 400px;
+    background-color: black;
+    height: 300px;
+    color: white;
+    /* display: block; */
+    background-image: linear-gradient(
+      to left,
+      rgba(25, 0, 0, 0.8),
+      rgba(0, 0, 143, 0.3)
+    );
+    width: 100%;
+    background-position: center;
   }
   .main {
     grid-area: main;
@@ -733,6 +752,40 @@ footer {
     /* height: 100px; */
     padding: 0;
     background-size: cover;
+    max-width: 375px;
+  }
+  .logo-container {
+    /* margin: 0; */
+    /* align-items: center; */
+    /* padding: 12px; */
+    /* margin-left: 140px; */
+    /* max-width: 375px; */
+  }
+  .logo {
+    /* text-align: center; */
+    max-width: 375px;
+    margin: 0;
+  }
+  .list-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* margin-left: 40px; */
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .nav-menu {
+    /* margin-left: 150px; */
+
+    /* max-width: 375px; */
   }
   .main-container {
     display: flex;
@@ -740,6 +793,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    max-width: 375px;
   }
   .making-food-header {
     display: flex;
@@ -752,7 +806,7 @@ footer {
     font-size: 30px;
   }
   .making-food-text-container {
-    height: 500px;
+    /* height: 500px; */
   }
   .making-food-text {
     display: flex;
@@ -766,12 +820,15 @@ footer {
   .more-details-button {
     margin-left: 150px;
   }
-
+  .buynowbutton {
+    margin: 15px;
+  }
   .main2 {
     grid-area: main2;
     display: flex;
     flex-direction: column;
-    padding-right: 400px;
+    max-width: 375px;
+    /* padding-right: 400px; */
   }
   .aboutus-header {
     margin-right: 150px;

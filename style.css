@@ -14,7 +14,7 @@ body {
   grid-template-rows:
     60px
     800px
-    450px
+    650px
     580px
     1200px
     400px
@@ -106,7 +106,7 @@ main {
       rgb(0, 0, 143, 0.3)
     ),
     url(./3041.jpg);
-  max-height: 600px;
+  max-height: 800px;
   max-width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -115,7 +115,7 @@ main {
 .main-container {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 
   /* top: 150px;
    */
@@ -154,7 +154,9 @@ main {
   grid-area: main2;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   flex-direction: row;
 }
 
@@ -163,7 +165,7 @@ main {
   font-size: 45px;
 }
 .aboutus-text {
-  margin-right: 150px;
+  /* margin-right: 150px; */
 }
 .more-details-button2 {
   background-color: rgb(74, 171, 0);
@@ -171,17 +173,21 @@ main {
   border: none;
 }
 .left-column-container {
-  margin-left: 150px;
-  margin-bottom: 200px;
-  margin-right: 10px;
+  display: block;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 100px;
+  /*margin-left:150pxmargin-bottom:200pxmargin-right:10px*/
   color: grey;
 }
 
 .shrimpdish {
-  margin-right: 100px;
+  /* margin-right: 100px; */
   height: 500px;
   width: 500px;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 .main3 {
@@ -544,174 +550,13 @@ footer {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 768px) {
-  .general-container {
-    display: grid;
-    grid-template-rows:
-      60px
-      800px
-      450px
-      580px
-      1200px
-      400px
-      80px;
-    grid-template-columns: none;
-    grid-template-areas:
-      "nav"
-      "main"
-      "main2"
-      "main3"
-      "main4"
-      "main5"
-      "footer";
-    margin: 0;
-  }
-
-  nav {
-    grid-area: nav;
-  }
-  .nav-container {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    justify-items: center;
-    height: 60px;
-    background-image: linear-gradient(
-      to left,
-      rgba(25, 0, 0, 0.8),
-      rgba(0, 0, 143, 0.3)
-    );
-  }
-  .logo-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .spacer {
-    height: 5px;
-    width: 10px;
-    padding: 5px;
-  }
-
-  .main {
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    background-position: center;
-  }
-  .main-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .making-food-header {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: center; */
-    /* margin-left: 100px;
-         width: 300px; */
-    font-size: 48px;
-    margin: 0;
-    padding: 0;
-  }
-  .making-food-text {
-    /* display: flex;
-    flex-direction: row; */
-    margin: 0;
-  }
-
-  .main2 {
-    grid-area: main2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .left-column-container {
-    height: 500px;
-    text-align: center;
-    display: block;
-  }
-  .more-details-button2 {
-    margin-top: 150px;
-    margin-left: 250px;
-  }
-
-  .aboutus-text {
-    height: 200px;
-    width: 200px;
-  }
-
-  .main3 {
-    grid-area: main3;
-    display: inline-block;
-  }
-  .small-image-container {
-    display: flex;
-    justify-content: center;
-  }
-  .img1 {
-    height: 150px;
-    width: 150px;
-  }
-  .img2 {
-    height: 150px;
-    width: 150px;
-  }
-  .img3 {
-    height: 150px;
-    width: 150px;
-  }
-  .img4 {
-    height: 150px;
-    width: 150px;
-  }
-  .shrimpdish {
-    height: 200px;
-    width: 200px;
-  }
-  .menu {
-    display: inline-block;
-  }
-  .more-details-button3 {
-    background-color: green;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  .main4 {
-    grid-area: main4;
-  }
-  .our-menu-container {
-    color: green;
-  }
-  .menu-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    font-size: 15px;
-  }
-  h6 {
-    font-size: 10px;
-  }
-  .main5 {
-    grid-area: main5;
-  }
-  footer {
-    grid-area: footer;
-    padding: 150px;
-  }
-}
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .general-container {
     display: grid;
     grid-template-rows:
-      300px
+      250px
       800px
-      450px
+      875px
       580px
       1200px
       400px
@@ -734,7 +579,7 @@ footer {
   }
   .nav-container {
     background-color: black;
-    height: 300px;
+    height: 250px;
     color: white;
     /* display: block; */
     background-image: linear-gradient(
@@ -747,7 +592,7 @@ footer {
   }
   .main {
     grid-area: main;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     /* height: 100px; */
     padding: 0;
@@ -789,11 +634,12 @@ footer {
   }
   .main-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     max-width: 375px;
+    margin: 0;
   }
   .making-food-header {
     display: flex;
@@ -818,33 +664,49 @@ footer {
     /* margin-left: 200px; */
   }
   .more-details-button {
-    margin-left: 150px;
+    /* margin-left: 150px; */
   }
   .buynowbutton {
     margin: 15px;
+  }
+  .shrimpdish {
+    margin: 0;
   }
   .main2 {
     grid-area: main2;
     display: flex;
     flex-direction: column;
     max-width: 375px;
+    align-items: center;
+    justify-content: space-evenly;
     /* padding-right: 400px; */
   }
   .aboutus-header {
-    margin-right: 150px;
+    text-align: center;
+  }
+  .aboutus-text {
+    margin: 0;
+    height: auto;
+    width: auto;
   }
   .left-column-container {
-    height: 600px;
+    margin: 0;
+    height: 450px;
+    width: 100%;
+    padding: 15px;
     text-align: center;
+    /* height: 300px; */
+    /* text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+  }
+  .right-column-container {
+    margin: 0;
   }
   .more-details-button2 {
-    margin-top: 200px;
-    margin-left: 5px;
-    position: relative;
-    margin-right: 150px;
+    margin: 0;
+    margin-top: 10px;
   }
   .main3 {
     grid-area: main3;

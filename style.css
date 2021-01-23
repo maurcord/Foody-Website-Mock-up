@@ -558,7 +558,7 @@ footer {
       800px
       875px
       600px
-      1800px
+      1900px
       700px
       350px;
     grid-template-columns: none;
@@ -804,7 +804,7 @@ footer {
     grid-area: main4;
     position: relative;
     max-width: 375px;
-    max-height: 1800px;
+    max-height: 1900px;
   }
   .main4::before {
     position: absolute;

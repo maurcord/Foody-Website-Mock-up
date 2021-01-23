@@ -13,7 +13,7 @@ body {
   display: grid;
   grid-template-rows:
     60px
-    800px
+    600px
     650px
     580px
     1200px
@@ -33,19 +33,24 @@ body {
 nav {
   grid-area: nav;
 }
+
 .nav-container {
   background-color: black;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   height: 60px;
   background-image: linear-gradient(
     to left,
     rgba(25, 0, 0, 0.8),
-    rgba(0, 0, 143, 0.3)
+    rgba(0, 0, 143, 0.4)
   );
+}
+.fill {
+  width: 630px;
+  height: 60px;
 }
 a {
   padding: 10px;
@@ -99,27 +104,27 @@ a {
 main {
   grid-area: main;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 105%;
   background-image: linear-gradient(
       to left,
       rgba(25, 0, 0, 0.2),
-      rgb(0, 0, 143, 0.3)
+      rgb(0, 0, 143, 0.4)
     ),
     url(./3041.jpg);
-  max-height: 800px;
+  background-position: center;
+  max-height: 600px;
   max-width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: black;
 }
 .main-container {
   display: flex;
   flex-direction: column;
-  /* margin-left: 150px; */
-
-  /* top: 150px;
-   */
-  /* margin-bottom: 100px; */
+  margin-left: 150px;
+  top: 150px;
+  margin-bottom: 100px;
 }
 .header-container {
   /* margin-right: 500px; */
@@ -375,7 +380,7 @@ h3 {
   background-image: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 71, 0.3)
+      rgba(0, 0, 71, 0.7)
     ),
     url(./BACKGROUND\ IMAGE\ Image.jpg);
 

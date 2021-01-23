@@ -613,6 +613,10 @@ footer {
     align-items: center;
     background-color: black;
   }
+  .fill {
+    width: 0;
+    height: 0;
+  }
   /* .main {
     grid-area: main;
     display: flex;

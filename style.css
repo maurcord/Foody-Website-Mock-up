@@ -45,7 +45,7 @@ nav {
   background-image: linear-gradient(
     to left,
     rgba(25, 0, 0, 0.8),
-    rgba(0, 0, 143, 0.4)
+    rgba(0, 0, 143, 0.3)
   );
 }
 .fill {
@@ -101,7 +101,7 @@ a {
   margin-left: 10px;
 }
 
-main {
+.main {
   grid-area: main;
   background-repeat: no-repeat;
   background-size: 105%;
@@ -560,7 +560,7 @@ footer {
     display: grid;
     grid-template-rows:
       170px
-      800px
+      600px
       875px
       600px
       1900px
@@ -597,13 +597,30 @@ footer {
   }
   .main {
     grid-area: main;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        to left,
+        rgba(25, 0, 0, 0.2),
+        rgb(0, 0, 143, 0.4)
+      ),
+      url(./3041.jpg);
+    background-position: center;
+    max-height: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+  }
+  /* .main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-items: flex-start;
     align-items: center;
     align-content: flex-start;
-    /* height: 100px; */
     padding: 0;
     background-size: 1300px 800px;
     background-repeat: no-repeat;
@@ -614,7 +631,7 @@ footer {
         rgb(0, 0, 143, 0.3)
       ),
       url(./3041.jpg);
-  }
+  } */
   .logo-container {
     margin-top: 25px;
     /* margin: 0; */
@@ -651,8 +668,11 @@ footer {
   }
   .main-container {
     justify-content: center;
-    height: 800px;
+    height: 600px;
     max-width: 375px;
+    margin-left: 0;
+    top: 0;
+    margin-bottom: 0;
 
     /* margin-left: 50px; */
   }
@@ -674,7 +694,7 @@ footer {
     flex-direction: column;
     text-align: center;
     width: 55%;
-    margin-left: 25px;
+    margin-left: 85px;
   }
 
   .buynowbutton {

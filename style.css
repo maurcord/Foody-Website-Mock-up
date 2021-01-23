@@ -824,7 +824,7 @@ footer {
     display: inline-block;
   }
   .more-details-button3 {
-    background-color: green;
+    background-color: gb(74, 171, 0);
     margin-bottom: 150px;
   }
   h1 {
@@ -874,7 +874,7 @@ footer {
   .main4-background-holder {
   } */
   .our-menu-container {
-    color: green;
+    color: gb(74, 171, 0);
     /* width: 150px;
     margin-left: 110px; */
   }
@@ -942,5 +942,8 @@ footer {
   .social-media-container {
     padding: 0;
     margin: 0;
+
   }
+  .follow-us-text {
+  color: rgb(74, 171, 0);
 }

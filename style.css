@@ -563,7 +563,7 @@ footer {
       600px
       875px
       600px
-      1900px
+      1600px
       700px
       350px;
     grid-template-columns: none;
@@ -602,7 +602,7 @@ footer {
     background-image: linear-gradient(
         to left,
         rgba(25, 0, 0, 0.2),
-        rgb(0, 0, 143, 0.4)
+        rgb(0, 0, 143, 0.3)
       ),
       url(./3041.jpg);
     background-position: center;
@@ -830,7 +830,7 @@ footer {
     grid-area: main4;
     position: relative;
     max-width: 375px;
-    max-height: 1900px;
+    max-height: 1600px;
   }
   .main4::before {
     position: absolute;
@@ -848,6 +848,21 @@ footer {
     opacity: 0.1;
     z-index: -1;
   }
+  .left.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-left: 30px; */
+  }
+  .right-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-left: 30px; */
+  }
+
   /* .main4 {
     grid-area: main4;
     display: block;
@@ -861,6 +876,7 @@ footer {
   }
   .menu-container {
     text-align: center;
+    gap: 50px;
     /* height: 1000px;
     width: 300px;
     margin-left: 30px; */
